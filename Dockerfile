@@ -11,8 +11,8 @@ WORKDIR /app
 COPY package.json ./
 COPY package-lock.json* ./
 
-# Install production dependencies
-RUN npm install --omit=dev
+# Install production dependencies and ignore prepare scripts like husky
+RUN npm install --omit=dev --ignore-scripts
 
 # Stage 2: Runner - Copy application code and run
 FROM node:25-alpine
