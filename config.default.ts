@@ -3,8 +3,8 @@ import type { NodelinkConfig } from './src/typings/config/config.types.ts'
 export const config: NodelinkConfig = {
   server: {
     host: '0.0.0.0',
-    port: 3000,
-    password: 'youshallnotpass',
+    port: 443,
+    password: 'hexal',
     useBunServer: true,
     cors: false,
     maxBodySize: 1048576,
