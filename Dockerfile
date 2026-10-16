@@ -32,12 +32,12 @@ COPY config.default.ts ./config.default.ts
 COPY package.json ./package.json
 
 # Expose the port the application listens on (default is 3000 from config.default.js)
-EXPOSE 3000
+EXPOSE 443
 
 # Set environment variables for configuration
 # These can be overridden via docker-compose.yml or 'docker run -e'
 # Example: NODELINK_SERVER_PASSWORD=your_secure_password
-ENV NODELINK_SERVER_PORT=3000 \
+ENV NODELINK_SERVER_PORT=443 \
     NODELINK_SERVER_HOST=0.0.0.0 \
     NODELINK_CLUSTER_ENABLED=true
 
