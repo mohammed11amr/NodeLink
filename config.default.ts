@@ -277,8 +277,8 @@ export const config: NodelinkConfig = {
 
   search: {
     maxResults: 10,
-    defaultSource: ['youtube', 'soundcloud'],
-    unifiedSources: ['youtube', 'soundcloud'],
+    defaultSource: ['youtube', 'spotify'],
+    unifiedSources: ['youtube', 'spotify'],
     resolveExternalLinks: false,
     fetchChannelInfo: false
   },
@@ -410,16 +410,16 @@ export const config: NodelinkConfig = {
   },
 
   sources: {
-  youtube: {
-    enabled: true,
-    allowItag: [],
-    targetItag: null,
-    getOAuthToken: false,
-    hl: 'en',
-    gl: 'US',
-    proxies: [],
-    mirrorOfficialAlbums: false,
-    fallbackSources: [],
+    youtube: {
+      enabled: true,
+      allowItag: [],
+      targetItag: null,
+      getOAuthToken: false,
+      hl: 'ar',
+      gl: 'EG',
+      proxies: [],
+      mirrorOfficialAlbums: false,
+      fallbackSources: [],
       clients: {
         search: ['Android'],
         playback: [
@@ -461,7 +461,7 @@ export const config: NodelinkConfig = {
       clientId: '',
       clientSecret: '',
       externalAuthUrl: 'http://get.1lucas1apk.fun/spotify/gettoken',
-      market: 'US',
+      market: 'EG',
       playlistLoadLimit: 1,
       playlistPageLoadConcurrency: 10,
       albumLoadLimit: 1,
@@ -472,7 +472,7 @@ export const config: NodelinkConfig = {
     },
 
     applemusic: {
-      enabled: true,
+      enabled: false,
       mediaApiToken: 'token_here',
       market: 'US',
       playlistLoadLimit: 0,
@@ -483,7 +483,7 @@ export const config: NodelinkConfig = {
     },
 
     vkmusic: {
-      enabled: true,
+      enabled: false,
       userToken: '',
       userCookie: '',
       proxy: {
@@ -501,13 +501,13 @@ export const config: NodelinkConfig = {
     },
 
     deezer: {
-      enabled: true,
+      enabled: false,
       arl: '',
       decryptionKey: ''
     },
 
     tidal: {
-      enabled: true,
+      enabled: false,
       token: 'token_here',
       countryCode: 'US',
       playlistLoadLimit: 2,
@@ -517,7 +517,7 @@ export const config: NodelinkConfig = {
     },
 
     jiosaavn: {
-      enabled: true,
+      enabled: false,
       playlistLoadLimit: 50,
       artistLoadLimit: 20,
       proxy: {
@@ -536,7 +536,7 @@ export const config: NodelinkConfig = {
     },
 
     gaana: {
-      enabled: true,
+      enabled: false,
       streamQuality: 'high',
       playlistLoadLimit: 100,
       albumLoadLimit: 100,
@@ -556,7 +556,7 @@ export const config: NodelinkConfig = {
     },
 
     yandexmusic: {
-      enabled: true,
+      enabled: false,
       accessToken: '',
       allowUnavailable: false,
       allowExplicit: true,
@@ -578,7 +578,7 @@ export const config: NodelinkConfig = {
     },
 
     eternalbox: {
-      enabled: true,
+      enabled: false,
       baseUrl: 'https://eternalboxmirror.xyz',
       searchResults: 30,
       enrichSpotify: true,
@@ -611,7 +611,7 @@ export const config: NodelinkConfig = {
     },
 
     songlink: {
-      enabled: true,
+      enabled: false,
       apiKey: '',
       userCountry: 'US',
       songIfSingle: true,
@@ -637,12 +637,12 @@ export const config: NodelinkConfig = {
     },
 
     http: {
-      enabled: true,
+      enabled: false,
       userAgent: ''
     },
 
     flowery: {
-      enabled: true,
+      enabled: false,
       voice: 'Salli',
       translate: false,
       silence: 0,
@@ -651,7 +651,7 @@ export const config: NodelinkConfig = {
     },
 
     lazypytts: {
-      enabled: true,
+      enabled: false,
       service: 'Cerence',
       voice: 'Luciana',
       maxTextLength: 3000,
@@ -670,7 +670,7 @@ export const config: NodelinkConfig = {
     },
 
     audius: {
-      enabled: true,
+      enabled: false,
       appName: '',
       apiKey: '',
       apiSecret: '',
@@ -679,7 +679,7 @@ export const config: NodelinkConfig = {
     },
 
     qobuz: {
-      enabled: true,
+      enabled: false,
       userToken: '',
       formatId: '5',
       allowExplicit: true
@@ -694,19 +694,19 @@ export const config: NodelinkConfig = {
     },
 
     pandora: {
-      enabled: true,
+      enabled: false,
       csrfToken: '',
       remoteTokenUrl: 'https://get.1lucas1apk.fun/pandora/gettoken'
     },
 
     amazonmusic: {
-      enabled: true,
+      enabled: false,
       playlistLoadLimit: 0,
       albumLoadLimit: 0
     },
 
     bluesky: {
-      enabled: true,
+      enabled: false,
       maxSearchResults: 10
     },
 
@@ -716,54 +716,54 @@ export const config: NodelinkConfig = {
     },
 
     rss: {
-      enabled: true
+      enabled: false
     },
 
     mixcloud: {
-      enabled: true
+      enabled: false
     },
 
     audiomack: {
-      enabled: true
+      enabled: false
     },
 
     bandcamp: {
-      enabled: true
+      enabled: false
     },
 
     newgrounds: {
-      enabled: true
+      enabled: false
     },
 
     soundcloud: {
-      enabled: true,
+      enabled: false,
       clientId: ''
     },
 
     local: {
-      enabled: true,
+      enabled: false,
       basePath: './local-music/'
     },
 
     vimeo: {
-      enabled: true
+      enabled: false
     },
 
     iheartradio: {
-      enabled: true
+      enabled: false
     },
 
     telegram: {
-      enabled: true
+      enabled: false
     },
 
     shazam: {
-      enabled: true,
+      enabled: false,
       allowExplicit: true
     },
 
     bilibili: {
-      enabled: true,
+      enabled: false,
       sessdata: '',
       network: {
         proxy: {
@@ -779,62 +779,62 @@ export const config: NodelinkConfig = {
     },
 
     pinterest: {
-      enabled: true
+      enabled: false
     },
 
     'google-tts': {
-      enabled: true,
+      enabled: false,
       language: 'en-US'
     },
 
     instagram: {
-      enabled: true
+      enabled: false
     },
 
     kwai: {
-      enabled: true
+      enabled: false
     },
 
     twitch: {
-      enabled: true
+      enabled: false
     },
 
     nicovideo: {
-      enabled: true
+      enabled: false
     },
 
     reddit: {
-      enabled: true
+      enabled: false
     },
 
     tumblr: {
-      enabled: true
+      enabled: false
     },
 
     twitter: {
-      enabled: true
+      enabled: false
     },
 
     lastfm: {
-      enabled: true,
+      enabled: false,
       apiKey: ''
     },
 
     netease: {
-      enabled: true
+      enabled: false
     },
 
     letrasmus: {
-      enabled: true
+      enabled: false
     },
 
     googledrive: {
-      enabled: true,
+      enabled: false,
       cookies: ''
     },
 
     tiktok: {
-      enabled: true
+      enabled: false
     }
   },
 
@@ -851,28 +851,28 @@ export const config: NodelinkConfig = {
       enabled: true
     },
     deezer: {
-      enabled: true
+      enabled: false
     },
     lrclib: {
       enabled: true
     },
     letrasmus: {
-      enabled: true
+      enabled: false
     },
     bilibili: {
-      enabled: true
+      enabled: false
     },
     yandexmusic: {
-      enabled: true
+      enabled: false
     },
     monochrome: {
-      enabled: true
+      enabled: false
     }
   },
 
   meanings: {
     letrasmus: {
-      enabled: true
+      enabled: false
     },
     wikipedia: {
       enabled: true
