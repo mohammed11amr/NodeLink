@@ -3,7 +3,7 @@ import type { NodelinkConfig } from './src/typings/config/config.types.ts'
 export const config: NodelinkConfig = {
   server: {
     host: '0.0.0.0',
-    port: 443,
+    port: 8080,
     password: 'hexal',
     useBunServer: true,
     cors: false,
