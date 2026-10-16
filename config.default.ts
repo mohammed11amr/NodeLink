@@ -414,7 +414,7 @@ export const config: NodelinkConfig = {
       enabled: true,
       allowItag: [],
       targetItag: null,
-      getOAuthToken: false, // <--- أعدها إلى false
+      getOAuthToken: false,
       hl: 'ar',
       gl: 'EG',
       proxies: [],
@@ -446,11 +446,9 @@ export const config: NodelinkConfig = {
         ],
         settings: {
           TV: {
-            // ضع التوكن الخاص بك هنا بين علامتي التنصيص
             refreshToken: ['1//05exJlsrhyb7DCgYIARAAGAUSNwF-L9Ir0vwwQ7xvc3pZgirBcPYIcAMmpSWAUrWa3XlZmOYtqC-kB6wOUV19bJ9Q3nzEvTB7-IY']
           },
           TV_DOWN: {
-            // قم بإضافة هذا السطر أيضاً ليعمل العميل الآخر
             refreshToken: ['1//05exJlsrhyb7DCgYIARAAGAUSNwF-L9Ir0vwwQ7xvc3pZgirBcPYIcAMmpSWAUrWa3XlZmOYtqC-kB6wOUV19bJ9Q3nzEvTB7-IY']
           }
         }
@@ -459,7 +457,6 @@ export const config: NodelinkConfig = {
         url: 'https://cipher.kikkia.dev/api',
         token: null
       }
-    },
     },
 
     spotify: {
