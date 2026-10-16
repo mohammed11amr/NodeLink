@@ -410,31 +410,16 @@ export const config: NodelinkConfig = {
   },
 
   sources: {
-    youtube: {
-      enabled: true,
-      allowItag: [],
-      targetItag: null,
-      getOAuthToken: false,
-      hl: 'en',
-      gl: 'US',
-      proxies: [],
-      mirrorOfficialAlbums: false,
-      fallbackSources: [
-        'soundcloud',
-        'deezer',
-        'jiosaavn',
-        'qobuz',
-        'gaana',
-        'vkmusic',
-        'yandexmusic',
-        'audiomack',
-        'bandcamp',
-        'audius',
-        'mixcloud',
-        'bilibili',
-        'bluesky',
-        'nicovideo'
-      ],
+  youtube: {
+    enabled: true,
+    allowItag: [],
+    targetItag: null,
+    getOAuthToken: false,
+    hl: 'en',
+    gl: 'US',
+    proxies: [],
+    mirrorOfficialAlbums: false,
+    fallbackSources: [],
       clients: {
         search: ['Android'],
         playback: [
