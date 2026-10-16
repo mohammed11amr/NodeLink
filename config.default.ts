@@ -3,8 +3,8 @@ import type { NodelinkConfig } from './src/typings/config/config.types.ts'
 export const config: NodelinkConfig = {
   server: {
     host: '0.0.0.0',
-    port: 3000,
-    password: 'youshallnotpass',
+    port: Number(process.env.PORT) || Number(process.env.NODELINK_SERVER_PORT) || 3000,
+    password: process.env.NODELINK_SERVER_PASSWORD || 'youshallnotpass',
     useBunServer: true,
     cors: false,
     maxBodySize: 1048576,
