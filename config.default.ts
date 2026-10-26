@@ -175,7 +175,7 @@ export const config: NodelinkConfig = {
       maxBlockDurationMs: 2400000,
       delayMs: 0
     },
-    maxConcurrentConnectionsPerIp: 25,
+    maxConcurrentConnectionsPerIp: 0,
     authProtection: {
       enabled: true,
       maxFailures: 5,
@@ -232,7 +232,7 @@ export const config: NodelinkConfig = {
     ip: {
       baseCapacity: 500,
       refillRatePerSecond: 100,
-      maxConcurrentSockets: 25,
+      maxConcurrentSockets: 0,
       maxProxySockets: 1024,
       ipv6SubnetMask: 64,
       blockScoreThreshold: 30,
