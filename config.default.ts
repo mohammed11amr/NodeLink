@@ -3,7 +3,7 @@ import type { NodelinkConfig } from './src/typings/config/config.types.ts'
 export const config: NodelinkConfig = {
   server: {
     host: '0.0.0.0',
-    port: 443,
+    port: 8080,
     password: 'hexal',
     useBunServer: true,
     cors: false,
@@ -153,7 +153,7 @@ export const config: NodelinkConfig = {
     ignore: {
       userIds: [],
       guildIds: [],
-      ips: ['127.0.0.1'],
+      ips: [],
       paths: []
     },
     trustProxy: false,
@@ -175,7 +175,7 @@ export const config: NodelinkConfig = {
       maxBlockDurationMs: 2400000,
       delayMs: 0
     },
-    maxConcurrentConnectionsPerIp: 2000,
+    maxConcurrentConnectionsPerIp: 25,
     authProtection: {
       enabled: true,
       maxFailures: 5,
@@ -187,7 +187,7 @@ export const config: NodelinkConfig = {
     ignore: {
       userIds: [],
       guildIds: [],
-      ips: ['127.0.0.1'],
+      ips: [],
       paths: []
     },
     trustProxy: false,
@@ -232,7 +232,7 @@ export const config: NodelinkConfig = {
     ip: {
       baseCapacity: 500,
       refillRatePerSecond: 100,
-      maxConcurrentSockets: 2000,
+      maxConcurrentSockets: 25,
       maxProxySockets: 1024,
       ipv6SubnetMask: 64,
       blockScoreThreshold: 30,
